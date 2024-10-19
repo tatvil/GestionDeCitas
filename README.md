@@ -25,16 +25,7 @@ La base de datos contiene una tabla clave para la gestión de contactos:
 | `id`        | INT (PK)   | Identificador único de la persona     |
 | `nombre`    | VARCHAR    | Nombre completo del cliente           |
 | `telefono`  | VARCHAR    | Número de teléfono (para WhatsApp)    |
-| `propietario`  | INT   | id del propietario del negocio, así podemos utilizar la misma base de datos para distintos negocios |
-
-### Tabla propietarios de negocios 
-| Campo           | Tipo       | Descripción                              |
-|-----------------|------------|------------------------------------------|
-| `id`            | INT (PK)   | Identificador único de la cita           |
-| `persona_id`    | INT (FK)   | Identificador del cliente                |
-| `fecha_hora`    | DATETIME   | Fecha y hora de la cita                  |
-| `servicio`      | VARCHAR    | Tipo de servicio (entrenamiento, sesión, etc.) |
-| `notificado`    | BOOLEAN    | Indica si se ha enviado el recordatorio   |
+| `propietario_id`  | INT   | id del propietario del negocio, así podemos utilizar la misma base de datos para distintos negocios |
 
 ### Tabla `citas`
 | Campo           | Tipo       | Descripción                              |
@@ -43,6 +34,17 @@ La base de datos contiene una tabla clave para la gestión de contactos:
 | `nombre`        | VARCHAR    | nombre                                   |
 | `email`         | VARCHAR    | Su email                                 |
 | `empresa`       | VARCHAR    | Para el "El día x tiene una cita en {nombre de empresa} |
+
+### Tabla `propietarios`
+| Campo           | Tipo       | Descripción                              |
+|-----------------|------------|------------------------------------------|
+| `id`            | INT (PK)   | Identificador único de la cita           |
+| `nombre`        | VARCHAR    | nombre                                   |
+| `email`         | VARCHAR    | email                                    |
+| `telefono`      | VARCHAR    | Telefono                                 |
+| `direccion`     | VARCHAR    | Direccion de facturacion                 |
+| `nif`           | VARCHAR    | NIF, NIE o CIF para las facturas         |
+
 
 ## Instalación
 
