@@ -33,9 +33,9 @@ La base de datos contiene una tabla clave para la gestión de contactos:
 | `id`            | INT (PK)   | Identificador único de la cita           |
 | `nombre`        | VARCHAR    | nombre                                   |
 | `email`         | VARCHAR    | Su email                                 |
-| `empresa`       | VARCHAR    | Para el "El día x tiene una cita en {nombre de empresa} |
+| `propietario_id`| VARCHAR    | Para el "El día x tiene una cita en {nombre de empresa} |
 
-### Tabla `propietarios`
+### Tabla `negocios` --> Son los negocios y los unicos que van a poder modificar 
 | Campo           | Tipo       | Descripción                              |
 |-----------------|------------|------------------------------------------|
 | `id`            | INT (PK)   | Identificador único de la cita           |
@@ -44,6 +44,8 @@ La base de datos contiene una tabla clave para la gestión de contactos:
 | `telefono`      | VARCHAR    | Telefono                                 |
 | `direccion`     | VARCHAR    | Direccion de facturacion                 |
 | `nif`           | VARCHAR    | NIF, NIE o CIF para las facturas         |
+| `responsable`   | INT        | El ID de la persona responsable del negocio |
+
 
 
 ## Instalación
