@@ -48,7 +48,7 @@ La base de datos contiene una tabla clave para la gestión de contactos:
 
 1. Clona el repositorio:
     ```bash
-    git clone [https://github.com/tatvil/GestionDeCitas.git]
+    git clone https://github.com/tatvil/GestionDeCitas.git
     ```
 
 2. Configura la base de datos MySQL:
